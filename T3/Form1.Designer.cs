@@ -32,8 +32,10 @@
             this.btnKeo = new System.Windows.Forms.Button();
             this.btnBua = new System.Windows.Forms.Button();
             this.btnBao = new System.Windows.Forms.Button();
+            this.labServerS = new System.Windows.Forms.Label();
             this.labYourResult = new System.Windows.Forms.Label();
             this.txtYourS = new System.Windows.Forms.TextBox();
+            this.txtServerS = new System.Windows.Forms.TextBox();
             this.txtYourR = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -80,6 +82,16 @@
             this.btnBao.UseVisualStyleBackColor = true;
             this.btnBao.Click += new System.EventHandler(this.btnBao_Click);
             // 
+            // labServerS
+            // 
+            this.labServerS.AutoSize = true;
+            this.labServerS.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labServerS.Location = new System.Drawing.Point(120, 126);
+            this.labServerS.Name = "labServerS";
+            this.labServerS.Size = new System.Drawing.Size(162, 25);
+            this.labServerS.TabIndex = 5;
+            this.labServerS.Text = "Server Selection:";
+            // 
             // labYourResult
             // 
             this.labYourResult.AutoSize = true;
@@ -92,14 +104,25 @@
             // 
             // txtYourS
             // 
+            this.txtYourS.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtYourS.Location = new System.Drawing.Point(297, 60);
             this.txtYourS.Multiline = true;
             this.txtYourS.Name = "txtYourS";
             this.txtYourS.Size = new System.Drawing.Size(100, 25);
             this.txtYourS.TabIndex = 8;
             // 
+            // txtServerS
+            // 
+            this.txtServerS.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtServerS.Location = new System.Drawing.Point(297, 126);
+            this.txtServerS.Multiline = true;
+            this.txtServerS.Name = "txtServerS";
+            this.txtServerS.Size = new System.Drawing.Size(100, 25);
+            this.txtServerS.TabIndex = 9;
+            // 
             // txtYourR
             // 
+            this.txtYourR.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtYourR.Location = new System.Drawing.Point(244, 334);
             this.txtYourR.Multiline = true;
             this.txtYourR.Name = "txtYourR";
@@ -112,8 +135,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(712, 425);
             this.Controls.Add(this.txtYourR);
+            this.Controls.Add(this.txtServerS);
             this.Controls.Add(this.txtYourS);
             this.Controls.Add(this.labYourResult);
+            this.Controls.Add(this.labServerS);
             this.Controls.Add(this.btnBao);
             this.Controls.Add(this.btnBua);
             this.Controls.Add(this.btnKeo);
@@ -133,8 +158,10 @@
         private System.Windows.Forms.Button btnKeo;
         private System.Windows.Forms.Button btnBua;
         private System.Windows.Forms.Button btnBao;
+        private System.Windows.Forms.Label labServerS;
         private System.Windows.Forms.Label labYourResult;
         private System.Windows.Forms.TextBox txtYourS;
+        private System.Windows.Forms.TextBox txtServerS;
         private System.Windows.Forms.TextBox txtYourR;
     }
 }

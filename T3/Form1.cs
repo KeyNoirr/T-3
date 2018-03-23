@@ -36,7 +36,12 @@ namespace T3
             byte[] receiveData = new byte[20];
             servers.ReceiveFrom(receiveData, ref remote);
             int recv = Convert.ToInt32(Encoding.ASCII.GetString(receiveData));
-
+            if (recv == 0)
+                txtServerS.Text = "Kéo";
+            else if (recv == 1)
+                txtServerS.Text = "Búa";
+            else
+                txtServerS.Text = "Bao";
             if (recv == 0)
                 txtYourR.Text = "Hòa";
             else if (recv == 1)
@@ -54,7 +59,12 @@ namespace T3
             byte[] receiveData = new byte[20];
             servers.ReceiveFrom(receiveData, ref remote);
             int recv = Convert.ToInt32(Encoding.ASCII.GetString(receiveData));
-
+            if (recv == 0)
+                txtServerS.Text = "Kéo";
+            else if (recv == 1)
+                txtServerS.Text = "Búa";
+            else
+                txtServerS.Text = "Bao";
             if (recv == 0)
                 txtYourR.Text = "Thắng";
             else if (recv == 1)
@@ -72,7 +82,12 @@ namespace T3
             byte[] receiveData = new byte[20];
             servers.ReceiveFrom(receiveData, ref remote);
             int recv = Convert.ToInt32(Encoding.ASCII.GetString(receiveData));
-
+            if (recv == 0)
+                txtServerS.Text = "Kéo";
+            else if (recv == 1)
+                txtServerS.Text = "Búa";
+            else
+                txtServerS.Text = "Bao";
             if (recv == 0)
                 txtYourR.Text = "Thua";
             else if (recv == 1)
